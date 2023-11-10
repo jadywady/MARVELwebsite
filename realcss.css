@@ -4,9 +4,21 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #f3eee2;
+    background-color: #121212;
 }
 
+#background-video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    margin: auto;
+    /* left: 0;
+    /* right: 0; */
+    top: 0; 
+    /* bottom: 0; */ 
+    z-index: -1;
+  }
 
 /* --------------------------------------NAVIGATION------------------------- */
 .logo{
@@ -19,7 +31,7 @@ body{
 li a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 .menu{
@@ -43,15 +55,15 @@ li a{
 }
 
 .nav-container{
-    background-color: white;
-    /* overflow: hidden; */
+    /* background-color: black; */
+    overflow: hidden; 
     left: 0;
     margin-top: 10px;
     block-size: auto;
     width: 100%;
     height: fit-content;
 }
-    
+/* --------------------------------------NAVIGATION------------------------- */    
     
 /* 
 .movie_poster{
@@ -63,18 +75,6 @@ li a{
     top: 200px;
 } */
 
-#background-video {
-    height: 90vh;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    margin: auto;
-    /* left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0; */
-    z-index: -1;
-  }
 
 
 .start-h1 {
@@ -91,7 +91,7 @@ li a{
       margin-top: 350px;
 
     }
-    
+  /* -----------------------------INFINITY------------------------- */  
     .infinity-container {
         width: 80%;
         height: 650px;
@@ -132,7 +132,6 @@ li a{
         font-size: 25px;
         z-index: 1;
         transform: scaleX(-1);
-        position: stat;
         position: absolute; right: 0; top: 55px; width: 40%; height: 650px; 
         padding: 20px;   
         
@@ -141,18 +140,189 @@ li a{
     .infinity-stones{
         display: flex;
         align-items: stretch;
-        margin-top: 400px;
-
+        margin-top: 250px;
+        overflow-x: auto;
+        position: relative;
         }
-    .stone{
-        width: cover;
-        height: 650px;
-        transform: rotate(270deg);
-        margin-right: 0;
+
+    .stone-pic{
+        width: 500px;
+        height: 500px;
+        margin-left: 20px;
+        object-fit: cover;
+        border-radius: 25px;
+        position: relative;
+    }
+
+    .space-content{
+
+        width: 500px;
+        height: 500px;
+        margin-left: 20px;
+        border-radius: 25px;
+
+        position: absolute;
+        z-index: 1;
+        background: #266EF6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+        top:0;
+        left:0;
+
+    }
+    .space-content:hover{
+        opacity: 1;
+    }
+
+    .mind-content{
+
+        width: 500px;
+        height: 500px;
+        margin-left: 20px;
+        border-radius: 25px;
+
+        position: absolute;
+        z-index: 1;
+        background: #FF8B00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+        top:0;
+        left:1;
+    }
+    .mind-content:hover{
+        opacity: 1;
+    }
+
+    .reality-content{
+
+        width: 500px;
+        height: 500px;
+        margin-left: 20px;
+        border-radius: 25px;
+
+        position: absolute;
+        z-index: 1;
+        background: #C60404;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+        top:0;
+        left:2;
+    }
+    .reality-content:hover{
+        opacity: 1;
+    }
+
+    .power-content{
+
+        width: 500px;
+        height: 500px;
+        margin-left: 20px;
+        border-radius: 25px;
+
+        position: absolute;
+        z-index: 1;
+        background: #BF00FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+        top:0;
+        left:3;
+    }
+    .power-content:hover{
+        opacity: 1;
+    }
+
+    .time-content{
+
+        width: 500px;
+        height: 500px;
+        margin-left: 20px;
+        border-radius: 25px;
+
+        position: absolute;
+        z-index: 1;
+        background: #35B535;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+        top:0;
+        left:4;
+    }
+    .time-content:hover{
+        opacity: 1;
+    }
+
+    .soul-content{
+
+        width: 500px;
+        height: 500px;
+        margin-left: 20px;
+        border-radius: 25px;
+
+        position: absolute;
+        z-index: 1;
+        background: #FFD300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+        top:0;
+        left:5;
+    }
+    .soul-content:hover{
+        opacity: 1;
+    }
+
+
+
+    .stone-title{
+        color: white;
+        height: 100px;
+        font-family: Trebuchet MS;
+        font-weight: bold;
+        text-align: center;
+        font-size: 50px;
+        z-index: 1;
+    }
+
+    .stone-description{
+        color: white;
+        font-family: Trebuchet MS;
+        text-align: center;
+        font-size: 15px;
+        width: 75%;
+        z-index: 1;
+
     }
 /* --------------------------------END STONES---------------- */
-    
-    
+
+
+
+/* -----------------------END INFINITY------------------------- */
+
+
+
+/* ------------------------------MULTIVERSE------------------------- */
     .multiverse-container {
         width: 80%;
         height: 650px;
@@ -194,8 +364,4 @@ li a{
         
     }
 
-    .head-pic{
-        width: 100%;
-        margin-top: 30px;
     
-    }

@@ -98,7 +98,7 @@ li a{
         height: 650px;
         margin: auto;
         border-radius: 25px;
-        background-image: url("/Users/jadywady/Documents/uni/Programming/MARVELwebsite/thanobackground.png");
+        background-image: url("thanobackground.png");
         background-repeat: no-repeat;
         background-position: left;
         background-size: cover;
@@ -332,7 +332,7 @@ li a{
         margin: auto;
         margin-top: 200px;
         border-radius: 25px;
-        background-image: url("/Users/jadywady/Documents/uni/Programming/MARVELwebsite/spidermanbackground.png");
+        background-image: url("spidermanbackground.png");
         background-repeat: no-repeat;
         background-position: left;
         background-size: cover;
